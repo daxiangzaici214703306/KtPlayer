@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="725dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toRightOf="@id/open_song_list"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/open_song_list"
+            android:id="@+id/music_recycleview" />
+
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickPlay"
+            android:text="@string/play"
+            app:layout_constraintLeft_toLeftOf="@id/open_song_list"
+            app:layout_constraintRight_toRightOf="@id/open_song_list"
+            app:layout_constraintTop_toBottomOf="@id/open_song_list" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickPause"
+            android:text="@string/pause"
+            app:layout_constraintLeft_toLeftOf="@id/open_song_list"
+            app:layout_constraintRight_toRightOf="@id/open_song_list"
+            app:layout_constraintTop_toBottomOf="@id/play" />
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickPrev"
+            android:text="@string/prev"
+            app:layout_constraintLeft_toLeftOf="@id/open_song_list"
+            app:layout_constraintRight_toRightOf="@id/open_song_list"
+            app:layout_constraintTop_toBottomOf="@id/pause" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickNext"
+            android:text="@string/next"
+            app:layout_constraintLeft_toLeftOf="@id/open_song_list"
+            app:layout_constraintRight_toRightOf="@id/open_song_list"
+            app:layout_constraintTop_toBottomOf="@id/prev" />
+
+
+        <Button
+            android:id="@+id/open_song_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSongList"
+            android:text="@string/song_list"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="20dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

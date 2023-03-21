@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KtPlayer</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="prev">上一曲</string>
+    <string name="next">下一曲</string>
+    <string name="song_list">歌曲列表</string>
+</resources>
